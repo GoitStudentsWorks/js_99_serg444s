@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEbSURBVHgBtdU9T8JAHMfx3x1V62J8B25Ozq6+ABeNujpp4mR8A0YT34SDi3Fw0WhinIENFkYWNhYGCAkPLRAIx/0HSGkKvd6f+ybX9PqQT3pDTwRB8CyEeIKjBB1cImJ+4goR0Uk53/35fR+dgdHBYQ7XD/5i7kVvHh3nOu3WFl5fhrBNxeYy/sDJ6TbuHn1sKi/pIiHNhkK1MoFJ9doUQU+ZA9TlzY5eqqn+ml2kdX/eXwnIdS8W/8caGYCTTHuAi6QCXMQI4CDGgC2SCbBBMgNZESsgC+KBESEs4LO0B5O+3kb41iMp6yWKRr+VCz2SYi1RHKHiP8glQClVkFIqWHZ16+PvY7ivT1mbVmq0/YZhqGjAVXMELiNkBrrMfdcCB+zYAAAAAElFTkSuQmCC" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css
+    "
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/js_99_serg444s/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_99_serg444s/assets/vendor-9b4a9007.js">
+    <link rel="modulepreload" crossorigin href="/js_99_serg444s/assets/openbook-262027a2.js">
+    <link rel="stylesheet" href="/js_99_serg444s/assets/openbook-794522da.css">
+    <link rel="stylesheet" href="/js_99_serg444s/assets/vendor-aa8b7909.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- хедер - Наталя -->
+      <header id="header" class="header">
+  <div class="container header_container">
+    <a href="./index.html" class="header_logo" aria-label="Logo">
+      <svg class="header_svg" width="24" height="24">
+        <use href="/js_99_serg444s/assets/symbol-defs-406116a7.svg#icon-logook"></use>
+      </svg>
+      <svg class="header_svg" width="77" height="14">
+        <use href="/js_99_serg444s/assets/symbol-defs-406116a7.svg#icon-Bookshelf"></use>
+      </svg>
+      <span>Logo</span>
+    </a>
+    <nav class="navigation">
+      <ul class="navigation_list">
+        <li class="navigation_item">
+          <a
+            class="navigation_link_home"
+            href="./index.html"
+            aria-label="Link to home page"
+            id="homeLink"
+            >Home</a
+          >
+        </li>
+        <li class="navigation_item">
+          <a
+            class="navigation_link_shopping"
+            href="./shopping-list.html"
+            aria-label="Link to Shopping list"
+            id="shoppingListLink"
+            >Shopping list
+            <svg class="basket" width="20" height="20">
+              <use
+                href="/js_99_serg444s/assets/symbol-defs-406116a7.svg#icon-basket"
+              ></use></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header_right">
+      <div class="header_togglers">
+        <label for="toggler" class="switch">
+          <input
+            id="toggler"
+            type="checkbox"
+            class="switch_input"
+            aria-label="Toggle menu"
+          />
+          <span class="switch_slider"></span>
+        </label>
+        <button
+          type="button"
+          class="burger"
+          data-action="open-modal"
+          aria-label="Toggle color theme"
+        >
+          <svg class="burger_button" width="28" height="28">
+            <use href="/js_99_serg444s/assets/symbol-defs-08aba503.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <button
+          class="burger_close"
+          type="button"
+          data-action="close-modal"
+          aria-label="Close modal"
+        >
+          <svg class="header_icon_close" width="21" height="21">
+            <use href="/js_99_serg444s/assets/symbol-defs-08aba503.svg#icon-closed"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="backdrop">
+    <div class="header_navigation_window">
+      <nav class="modal__nav">
+        <ul class="nav__List-menu">
+          <li class="home__item">
+            <a
+              class="nav__link--current"
+              href="./index.html"
+              aria-label="Link to home page"
+              >Home</a
+            >
+          </li>
+          <li class="shop__item">
+            <a
+              class="nav__shopping"
+              href="./shopping-list.html"
+              aria-label="Link to Shopping list"
+              >Shopping list
+              <svg class="nav__basket" width="20" height="20">
+                <use
+                  href="/js_99_serg444s/assets/symbol-defs-406116a7.svg#icon-basket"
+                ></use></svg
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+      <main>
+        <div class="main-container">
+          <div class="together-container">
+            <div class="left-container">
+              <!-- категорії - Даня -->
+              <!-- Даня -->
+
+<div class="categories-block">
+  <ul class="categories-list_books">
+    <li class="item-list_category">
+      <a href="" class="link_category-book active-category">All Categories</a>
+    </li>
+  </ul>
+</div>
+
+              <!-- Ukraine - Даша -->
+              <div class="for__support">
+  <div class="supporters">
+    <div class="supporters__title">
+      <h3 class="supporters__heading">Support Ukraine</h3>
+      <svg class="supporters__icon">
+        <use href="/js_99_serg444s/assets/symbol-defs-08aba503.svg#icon-Ukraine"></use>
+      </svg>
+    </div>
+    <div class="swiper">
+      <ul class="supporters_list swiper-wrapper"></ul>
+    </div>
+    <button class="supporters__btn">
+      <span>Scroll down</span>
+      <svg class="supporters__btn-icon" width="20" height="20">
+        <use href="/js_99_serg444s/assets/symbol-defs-08aba503.svg#my-ikon"></use>
+      </svg>
+    </button>
+
+    
+  </div>
+</div>
+
+            </div>
+
+            <div class="right-container">
+              <!-- книги - Анатолій -->
+              <!-- Анатолій -->
+<div>
+  <div class="shopping-list-loader-container">
+    <div class="books-loader" id="modal-main"></div>
+  </div>
+
+  <ul class="top-categories-list"></ul>
+  <button
+    aria-label="Scroll up"
+    class="scroll-up-js js-scroll-up-hidden"
+    type="button"
+    title="Go to top"
+  >
+    <svg
+      class="scroll-up"
+      width="22"
+      height="22"
+      viewBox="0 0 22 22"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10.3491 9.71657C10.4343 9.63066 10.5357 9.56246 10.6474 9.51592C10.7591 9.46939 10.8789 9.44543 11 9.44543C11.121 9.44543 11.2408 9.46939 11.3525 9.51592C11.4642 9.56246 11.5656 9.63066 11.6508 9.71657L15.8491 13.9241C15.9343 14.01 16.0357 14.0782 16.1474 14.1247C16.2591 14.1713 16.379 14.1952 16.5 14.1952C16.621 14.1952 16.7408 14.1713 16.8525 14.1247C16.9642 14.0782 17.0656 14.01 17.1508 13.9241C17.3215 13.7523 17.4174 13.52 17.4174 13.2778C17.4174 13.0357 17.3215 12.8033 17.1508 12.6316L12.9433 8.42407C12.4277 7.90909 11.7287 7.61983 11 7.61983C10.2712 7.61983 9.57225 7.90909 9.05662 8.42407L4.84912 12.6316C4.67977 12.8023 4.58429 13.0328 4.58328 13.2732C4.58258 13.3939 4.60571 13.5135 4.65132 13.6252C4.69694 13.7368 4.76416 13.8384 4.84912 13.9241C4.93433 14.01 5.03572 14.0782 5.14742 14.1247C5.25912 14.1713 5.37894 14.1952 5.49995 14.1952C5.62096 14.1952 5.74077 14.1713 5.85248 14.1247C5.96418 14.0782 6.06557 14.01 6.15078 13.9241L10.3491 9.71657Z"
+        fill="#4F2EE8"
+      />
+    </svg>
+    <!-- <img
+      class="scroll-up-blue"
+      src="./img/material-symbols_arrow-back-ios-rounded.png"
+      alt="arrow"
+    /> -->
+  </button>
+</div>
+<div id="womanModal" class="modal-woman">
+  <div class="modal-content-woman">
+    <!--<span class="close">&times;</span>-->
+    <img src="/js_99_serg444s/assets/happy-8-marta-pink-flowers-zhenskii-den-8-march-women-s-day-ddb3ebda.webp" alt="Welcome Image">
+
+  
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    
+  </body>
+</html>
